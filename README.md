@@ -1,9 +1,14 @@
 =======
 # Low-level programming & Algorithm
 
-This repository contains solution programs written for the High-level programming & Algorithm projects/tasks.
+This repository contains solution programs written for the Higher-level programming & Algorithm projects/tasks.
 This is part of the Full Stack Software Engineer program organized by Alx Africa which occurred throughout the duration of the year 2022 June, cohort08 curriculum.
  The projects are written in py programming language.
+
+## Table of contents
+
+* [0x00. Python - Hello, World](https://github.com/tynist/alx-higher_level_programming/tree/main/0x00-python-hello_world)
+
 
 ## Requirements
 
@@ -41,12 +46,6 @@ To run this project, you will need to install the following tools.
 -   The prototypes of all your functions should be included in your header file called `lists.h`
 -   Don't forget to push your header file
 -   All your header files should be include guarded
-
-
-## Table of contents
-
-* [0x00. Python - Hello, World](https://github.com/tynist/alx-higher_level_programming/tree/main/0x00-python-hello_world)
-
 
 ## WARNING!
 
