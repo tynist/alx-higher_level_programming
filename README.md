@@ -1,4 +1,4 @@
-# Higeher-level programming & Algorithm
+# Higher-level programming & Algorithm
 
 This repository contains solution programs written for the Higher-level programming & Algorithm projects/tasks.
 This is part of the Full Stack Software Engineer program organized by Alx Africa which occurred throughout the duration of the year 2022 June, cohort08 curriculum.
