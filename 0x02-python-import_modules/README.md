@@ -284,6 +284,7 @@ guillaume@ubuntu:~/0x02$
 -   File: `4-hidden_discovery.py`
 
 
+
 ### 5\. Everything can be imported
 
 Write a program that imports the variable `a` from the file `variable_load_5.py` and prints its value.
@@ -405,6 +406,28 @@ guillaume@ubuntu:~/0x02$
 -   GitHub repository: `alx-higher_level_programming`
 -   Directory: `0x02-python-import_modules`
 -   File: `100-my_calculator.py`
+
+
+
+### 7\. Easy print
+
+Write a program that prints `#pythoniscool`, followed by a new line, in the standard output.
+
+-   Your program should be maximum 2 lines long
+-   You are not allowed to use `print` or `eval` or `open` or `import sys` in your file `101-easy_print.py`
+
+```
+guillaume@ubuntu:~/0x02$ ./101-easy_print.py
+#pythoniscool
+guillaume@ubuntu:~/0x02$ 
+
+```
+
+**Repo:**
+
+-   GitHub repository: `alx-higher_level_programming`
+-   Directory: `0x02-python-import_modules`
+-   File: `101-easy_print.py`
 
 
 
