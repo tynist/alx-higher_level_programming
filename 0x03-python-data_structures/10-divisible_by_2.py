@@ -8,7 +8,5 @@ def divisible_by_2(my_list=[]):
 
     div_2 = []
     for i in my_list:
-        div_2.append(True)
-        if i % 2 == 0:
-            else div_2.append(False)
+        div_2.append(True) if i % 2 == 0 else div_2.append(False)
     return div_2
