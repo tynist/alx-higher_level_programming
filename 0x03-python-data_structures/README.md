@@ -821,5 +821,3 @@ julien@CPython:~/CPython$
 -   GitHub repository: `alx-higher_level_programming`
 -   Directory: `0x03-python-data_structures`
 -   File: `100-print_python_list_info.c`
-
--
