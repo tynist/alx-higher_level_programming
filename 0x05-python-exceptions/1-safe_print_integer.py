@@ -3,6 +3,5 @@ def safe_print_integer(value):
     """Prints an integer with "{:d}".format()."""
     try:
         print('{:d}'.format(value))
-    except:
-        return False
-    return True
+    except (TypeError, ValueError)
+    return False
