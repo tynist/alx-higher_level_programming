@@ -474,6 +474,7 @@ guillaume@ubuntu:~/0x05$
 ### 9\. ByteCode -> Python #4
 Write the Python function `def magic_calculation(a, b)`: that does exactly the same as the following Python bytecode:
 
+```
   3           0 LOAD_CONST               1 (0)
               3 STORE_FAST               2 (result)
 
@@ -528,6 +529,8 @@ Write the Python function `def magic_calculation(a, b)`: that does exactly the s
 
  13     >>  103 LOAD_FAST                2 (result)
             106 RETURN_VALUE
+```
+
 Tip: Python bytecode[Python bytecode](https://alx-intranet.hbtn.io/rltoken/-eivu0w172OUPm-iCeKgtw)
 
 **Repo:**
