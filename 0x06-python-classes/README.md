@@ -608,10 +608,10 @@ guillaume@ubuntu:~/0x06$
 GitHub repository: `alx-higher_level_programming`
 Directory: `0x06-python-classes`
 File: `101-square.py`
-    
-9. Compare 2 squares
-#advanced
-Score: 100.0% (Checks completed: 100.0%)
+
+
+
+### 9\. Compare 2 squares
 Write a class Square that defines a square by: (based on 4-square.py)
 
 Private instance attribute: size:
