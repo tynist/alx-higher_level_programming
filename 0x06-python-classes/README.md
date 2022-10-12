@@ -81,17 +81,12 @@ More Info
 
 **Documentation is now mandatory!** Each module, class, and method must contain docstring as comments. [Example Google Style Python Docstrings](https://alx-intranet.hbtn.io/rltoken/dOO785g5EQYkRU2E1wri0g "Example Google Style Python Docstrings")
 
-Quiz questions
---------------
 
-Show
 
 Tasks
 -----
 
 ### 0\. My first square
-
-mandatory
 
 Write an empty class `Square` that defines a square:
 
@@ -119,11 +114,9 @@ guillaume@ubuntu:~/0x06$
 -   Directory: `0x06-python-classes`
 -   File: `0-square.py`
 
- Done? Help Check your code Get a sandbox
+
 
 ### 1\. Square with size
-
-mandatory
 
 Write a class `Square` that defines a square by: (based on `0-square.py`)
 
@@ -171,12 +164,9 @@ guillaume@ubuntu:~/0x06$
 -   Directory: `0x06-python-classes`
 -   File: `1-square.py`
 
- Done? Help Check your code Get a sandbox
+
 
 ### 2\. Size validation
-
-mandatory
-
 Write a class `Square` that defines a square by: (based on `1-square.py`)
 
 -   Private instance attribute: `size`
@@ -242,12 +232,9 @@ guillaume@ubuntu:~/0x06$
 -   Directory: `0x06-python-classes`
 -   File: `2-square.py`
 
- Done? Help Check your code Get a sandbox
+
 
 ### 3\. Area of a square
-
-mandatory
-
 Write a class `Square` that defines a square by: (based on `2-square.py`)
 
 -   Private instance attribute: `size`
@@ -294,12 +281,9 @@ guillaume@ubuntu:~/0x06$
 -   Directory: `0x06-python-classes`
 -   File: `3-square.py`
 
- Done? Help Check your code Get a sandbox
+
 
 ### 4\. Access and update private attribute
-
-mandatory
-
 Write a class `Square` that defines a square by: (based on `3-square.py`)
 
 -   Private instance attribute: `size`:
@@ -349,12 +333,9 @@ guillaume@ubuntu:~/0x06$
 -   Directory: `0x06-python-classes`
 -   File: `4-square.py`
 
- Done? Help Check your code Get a sandbox
+
 
 ### 5\. Printing a square
-
-mandatory
-
 Write a class `Square` that defines a square by: (based on `4-square.py`)
 
 -   Private instance attribute: `size`:
@@ -417,12 +398,9 @@ guillaume@ubuntu:~/0x06$
 -   Directory: `0x06-python-classes`
 -   File: `5-square.py`
 
- Done? Help Check your code Get a sandbox
+
 
 ### 6\. Coordinates of a square
-
-mandatory
-
 Write a class `Square` that defines a square by: (based on `5-square.py`)
 
 -   Private instance attribute: `size`:
@@ -548,9 +526,9 @@ guillaume@ubuntu:~/0x06$
 
 ***Repo:***
 
-GitHub repository: `alx-higher_level_programming`
-Directory: `0x06-python-classes`
-File: `100-singly_linked_list.py`
+-   GitHub repository: `alx-higher_level_programming`
+-   Directory: `0x06-python-classes`
+-   File: `100-singly_linked_list.py`
     
     
     
@@ -560,19 +538,19 @@ Write a class `Square` that defines a square by: (based on `6-square.py`)
 -   Private instance attribute: `size`:
     -   property `def size(self)`: to retrieve it
     -   property setter `def size(self, value)`: to set it:
-size must be an integer, otherwise raise a TypeError exception with the message size must be an integer
-if size is less than 0, raise a ValueError exception with the message size must be >= 0
-Private instance attribute: position:
-property def position(self): to retrieve it
-property setter def position(self, value): to set it:
-position must be a tuple of 2 positive integers, otherwise raise a TypeError exception with the message position must be a tuple of 2 positive integer
-Instantiation with optional size and optional position: def __init__(self, size=0, position=(0, 0)):
-Public instance method: def area(self): that returns the current square area
-Public instance method: def my_print(self): that prints in stdout the square with the character #:
-if size is equal to 0, print an empty line
-position should be use by using space
-Printing a Square instance should have the same behavior as my_print()
-You are not allowed to import any module
+        -   `size` must be an integer, otherwise raise a TypeError exception with the message `size must be an integer`
+        -   if `size` is less than `0`, raise a `ValueError` exception with the message `size must be >= 0`
+-   Private instance attribute: `position`:
+    -   property `def position(self)`: to retrieve it
+    -   property setter `def position(self, value)`: to set it:
+        -   `position` must be a tuple of 2 positive integers, otherwise raise a `TypeError` exception with the message `position` must be a tuple of 2 positive integer`
+-   Instantiation with optional `size` and optional position: `def __init__(self, size=0, position=(0, 0))`:
+-   Public instance method: `def area(self)`: that returns the current square area
+-   Public instance method: `def my_print(self)`: that prints in stdout the square with the character `#`:
+    -   if `size` is equal to 0, print an empty line
+    -   `position` should be use by using space
+-   Printing a `Square` instance should have the same behavior as `my_print()`
+-   You are not allowed to import any module
 
 ```
 guillaume@ubuntu:~/0x06$ cat 101-main.py
@@ -605,24 +583,26 @@ guillaume@ubuntu:~/0x06$
 
 **Repo:**
 
-GitHub repository: `alx-higher_level_programming`
-Directory: `0x06-python-classes`
-File: `101-square.py`
+-   GitHub repository: `alx-higher_level_programming`
+-   Directory: `0x06-python-classes`
+-   File: `101-square.py`
 
 
 
 ### 9\. Compare 2 squares
-Write a class Square that defines a square by: (based on 4-square.py)
+Write a class `Square` that defines a square by: (based on `4-square.py`)
 
-Private instance attribute: size:
-property def size(self): to retrieve it
-property setter def size(self, value): to set it:
-size must be a number (float or integer), otherwise raise a TypeError exception with the message size must be a number
-if size is less than 0, raise a ValueError exception with the message size must be >= 0
-Instantiation with size: def __init__(self, size=0):
-Public instance method: def area(self): that returns the current square area
-Square instance can answer to comparators: ==, !=, >, >=, < and <= based on the square area
-You are not allowed to import any module
+-   Private instance attribute: `size`:
+    -   property `def size(self)`: to retrieve it
+    -   property setter `def size(self, value)`: to set it:
+        -   `size` must be a number (float or integer), otherwise raise a `TypeError` exception with the message `size must be a number`
+        -   if `size` is less than `0`, raise a `ValueError` exception with the message `size must be >= 0`
+-   Instantiation with size: `def __init__(self, size=0)`:
+-   Public instance method: `def area(self)`: that returns the current square area
+-   `Square` instance can answer to comparators: `==`, `!=`, `>`, `>=`, `<` and `<=` based on the square area
+-   You are not allowed to import any module
+
+```
 guillaume@ubuntu:~/0x06$ cat 102-main.py
 #!/usr/bin/python3
 Square = __import__('102-square').Square
@@ -648,17 +628,20 @@ Square 5 < Square 6
 Square 5 <= Square 6
 Square 5 != Square 6
 guillaume@ubuntu:~/0x06$ 
-Repo:
+```
 
-GitHub repository: alx-higher_level_programming
-Directory: 0x06-python-classes
-File: 102-square.py
-    
-10. ByteCode -> Python #5
-#advanced
-Score: 100.0% (Checks completed: 100.0%)
-Write the Python class MagicClass that does exactly the same as the following Python bytecode:
+**Repo:**
 
+-   GitHub repository: `alx-higher_level_programming`
+-   Directory: `0x06-python-classes`
+-   File: `102-square.py`
+
+
+
+### 10\. ByteCode -> Python #5
+Write the Python class `MagicClass` that does exactly the same as the following Python bytecode:
+
+```
 Disassembly of __init__:
  10           0 LOAD_CONST               1 (0)
               3 LOAD_FAST                0 (self)
@@ -708,24 +691,13 @@ Disassembly of circumference:
              13 LOAD_ATTR                2 (_MagicClass__radius)
              16 BINARY_MULTIPLY
              17 RETURN_VALUE
-Tip: Python bytecode
-Repo:
+```
 
-GitHub repository: alx-higher_level_programming
-Directory: 0x06-python-classes
-File: 103-magic_class.py
+Tip: [Python bytecode](https://alx-intranet.hbtn.io/rltoken/l0hEn4L06ZhFg5HzGPbEhQ)
 
+**Repo:**
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+-   GitHub repository: `alx-higher_level_programming`
+-   Directory: `0x06-python-classes`
+-   File: `103-magic_class.py`
+-   
