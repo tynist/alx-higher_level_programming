@@ -12,6 +12,7 @@ This is part of the Full Stack Software Engineer program organized by Alx Africa
 * [0x03. Python - Data Structures: Lists, Tuples](https://github.com/tynist/alx-higher_level_programming/tree/main/0x03-python-data_structures)
 * [0x04. Python - More Data Structures: Set, Dictionary](https://github.com/tynist/alx-higher_level_programming/tree/main/0x04-python-more_data_structures)
 * [0x05. Python - Exceptions](https://github.com/tynist/alx-higher_level_programming/tree/main/0x05-python-exceptions)
+* [0x06. Python - Classes and Objects](https://github.com/tynist/alx-higher_level_programming/tree/main/0x06-python-classes)
 
 ## WARNING!
 
