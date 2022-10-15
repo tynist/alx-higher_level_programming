@@ -275,15 +275,18 @@ guillaume@ubuntu:~/0x07$
 -   GitHub repository: `alx-higher_level_programming`
 -   Directory: `0x07-python-test_driven_development`
 -   File: `4-print_square.py`, `tests/4-print_square.txt`
-  
-4. Text indentation
-mandatory
-Write a function that prints a text with 2 new lines after each of these characters: ., ? and :
 
-Prototype: def text_indentation(text):
-text must be a string, otherwise raise a TypeError exception with the message text must be a string
-There should be no space at the beginning or at the end of each printed line
-You are not allowed to import any module
+
+
+### 4\. Text indentation
+Write a function that prints a text with 2 new lines after each of these characters: `.,` `?` and `:`
+
+-   Prototype: `def text_indentation(text)`:
+-   `text` must be a string, otherwise raise a `TypeError` exception with the message `text must be a string`
+-   There should be no space at the beginning or at the end of each printed line
+-   You are not allowed to import any module
+
+```
 guillaume@ubuntu:~/0x07$ cat 5-main.py
 #!/usr/bin/python3
 text_indentation = __import__('5-text_indentation').text_indentation
@@ -328,24 +331,26 @@ $
 Utinam quidem dicerent alium alio beatiorem! Iam ruinas videresguillaume@ubuntu:~/0x07$
 guillaume@ubuntu:~/0x07$ python3 -m doctest -v ./tests/5-text_indentation.txt
 guillaume@ubuntu:~/0x07$ 
-Repo:
+```
 
-GitHub repository: alx-higher_level_programming
-Directory: 0x07-python-test_driven_development
-File: 5-text_indentation.py, tests/5-text_indentation.txt
+**Repo:**
+-   GitHub repository: `alx-higher_level_programming`
+-   Directory: `0x07-python-test_driven_development`
+-   File: `5-text_indentation.py`, `tests/5-text_indentation.txt`
   
-5. Max integer - Unittest
-mandatory
+### 5\. Max integer - Unittest
 Since the beginning you have been creating “Interactive tests”. For this exercise, you will add Unittests.
 
-In this task, you will write unittests for the function def max_integer(list=[]):.
+In this task, you will write unittests for the function `def max_integer(list=[]):`.
 
-Your test file should be inside a folder tests
-You have to use the unittest module
-Your test file should be python files (extension: .py)
-Your test file should be executed by using this command: python3 -m unittest tests.6-max_integer_test
-All tests you make must be passable by the function below
-We strongly encourage you to work together on test cases, so that you don’t miss any edge case
+-   Your test file should be inside a folder `tests`
+-   You have to use the [unittest module](https://alx-intranet.hbtn.io/rltoken/hX5a13o-1mXGTQASWBitFQ)
+-   Your test file should be python files (extension: `.py`)
+-   Your test file should be executed by using this command: `python3 -m unittest tests.6-max_integer_test`
+-   All tests you make must be passable by the function below
+-   We strongly encourage you to work together on test cases, so that you don’t miss any edge case
+
+```
 guillaume@ubuntu:~/0x07$ cat 6-max_integer.py
 #!/usr/bin/python3
 """Module to find the max integer in a list
@@ -390,15 +395,16 @@ max_integer = __import__('6-max_integer').max_integer
 
 class TestMaxInteger(unittest.TestCase):
 guillaume@ubuntu:~/0x07$ 
-Repo:
+```
 
-GitHub repository: alx-higher_level_programming
-Directory: 0x07-python-test_driven_development
-File: tests/6-max_integer_test.py
+**Repo:**
+-   GitHub repository: `alx-higher_level_programming`
+-   Directory: `0x07-python-test_driven_development`
+-   File: `tests/6-max_integer_test.py`
 
 
 
-###6\. Matrix multiplication
+### 6\. Matrix multiplication
 Write a function that multiplies 2 matrices:
 
 -   Read: [Matrix multiplication - only Matrix product (two matrices)](https://alx-intranet.hbtn.io/rltoken/Qw_rYR3lYYL5DHDH-iCWCA)
