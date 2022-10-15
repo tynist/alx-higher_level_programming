@@ -4,7 +4,7 @@
 -   By Guillaume
 
 Concepts
-"For this project, we expect you to look at this concept:"
+*For this project, we expect you to look at this concept:*
 
 [Never forget a test](https://alx-intranet.hbtn.io/concepts/47)
 
@@ -26,7 +26,7 @@ Resources
 
 **Read or watch**:
 
--   [doctest — Test interactive Python examples](https://alx-intranet.hbtn.io/rltoken/BwZJVq2MQ1_Vg_3gphoitQ) ("until “26.2.3.7. Warnings” included")
+-   [doctest — Test interactive Python examples](https://alx-intranet.hbtn.io/rltoken/BwZJVq2MQ1_Vg_3gphoitQ) *(until “26.2.3.7. Warnings” included)*
 -   [doctest – Testing through documentation](https://alx-intranet.hbtn.io/rltoken/96kLRRIOHzsn3VDDXT21HA)
 -   [Unit Tests in Python](https://alx-intranet.hbtn.io/rltoken/wfuUl81Q3Nku1qCzdDHAfA)
 
