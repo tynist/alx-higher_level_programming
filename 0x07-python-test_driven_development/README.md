@@ -4,9 +4,8 @@
 -   By Guillaume
 
 Concepts
-*For this project, we expect you to look at this concept:*
-
-[Never forget a test](https://alx-intranet.hbtn.io/concepts/47)
+   *For this project, we expect you to look at this concept:*
+-   [Never forget a test](https://alx-intranet.hbtn.io/concepts/47)
 
 
 Background Context
