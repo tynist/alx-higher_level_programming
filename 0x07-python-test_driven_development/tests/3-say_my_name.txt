@@ -1,68 +1,45 @@
-A test for the say_my_name function
+The ``say_my_name`` module
+===============================================================================
 
-Import the module
->>> import sys
->>> sys.path.insert(1, '../')
->>> lib = __import__("3-say_my_name")
->>> func = lib.say_my_name
->>> fn1 = "Musa"
->>> ln1 = "Kanneh"
->>> fn2 = 4
->>> ln2 = 5
+Using ``say_my_name``
+-------------------------------------------------------------------------------
 
+Import say_my_name form 3-say_my_name
 
-#Normal Test
->>> func(fn1, ln1)
-My name is Musa Kanneh
+    >>> say_my_name = __import__('3-say_my_name').say_my_name
 
-#Type Errors
->>> func(fn1, ln2)
-Traceback (most recent call last):
-...
-TypeError: last_name must be a string
->>> func(fn2, ln1)
-Traceback (most recent call last):
-...
-TypeError: first_name must be a string
+It should print out the 'My name is <first_name> <last_name>'
 
+    >>> say_my_name('issam', 'sebri')
+    My name is issam sebri
 
->>> fn2 = 4.3
->>> ln2 = 5.7
+It should work fine if we does'nt pass last_name
 
+    >>> say_my_name('issam')
+    My name is issam 
 
->>> func(fn1, ln2)
-Traceback (most recent call last):
-...
-TypeError: last name must be a string
->>> func(fn2, ln1)
-Traceback (most recent call last):
-...
-TypeError: first name must be a string
+It should ignore space if we pass empty first_name
 
+    >>> say_my_name('', 'sebri')
+    My name is  sebri
 
+It should raise exception if we pass somthing other than string for first_name
 
->>> fn2 = 3 + 1j
->>> ln2 = []
+    >>> say_my_name(100, 'sebri')
+    Traceback (most recent call last):
+        ...
+    TypeError: first_name must be a string
 
+It should raise exception if we pass somthing other than string for last_name
 
->>> func(fn1, ln2)
-Traceback (most recent call last):
-...
-TypeError: last_name must be a string
->>> func(fn2, ln1)
-Traceback (most recent call last):
-...
-TypeError: first_name must be a string
+    >>> say_my_name('issam', 98)
+    Traceback (most recent call last):
+        ...
+    TypeError: last_name must be a string
 
->>> fn2 = {}
->>> ln2 = 3 + 1j
+It should raise exception if we pass something other than string for both
 
-
->>> func(fn1, ln2)
-Traceback (most recent call last):
-...
-TypeError: last name must be a string
->>> func(fn2, ln1)
-Traceback (most recent call last):
-...
-TypeError: first name must be a string
+    >>> say_my_name(100, 98)
+    Traceback (most recent call last):
+        ...
+    TypeError: first_name must be a string
