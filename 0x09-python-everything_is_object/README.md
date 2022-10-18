@@ -201,7 +201,6 @@ What do these 3 lines print?
 >>> print(s1 == s2)
 
 ```
-
 **Repo:**
 -   GitHub repository: `alx-higher_level_programming`
 -   Directory: `0x09-python-everything_is_object`
@@ -218,7 +217,6 @@ What do these 3 lines print?
 >>> print(s1 is s2)
 
 ```
-
 **Repo:**
 -   GitHub repository: `alx-higher_level_programming`
 -   Directory: `0x09-python-everything_is_object`
@@ -235,7 +233,6 @@ What do these 3 lines print?
 >>> print(s1 == s2)
 
 ```
-
 **Repo:**
 -   GitHub repository: `alx-higher_level_programming`
 -   Directory: `0x09-python-everything_is_object`
@@ -252,7 +249,6 @@ What do these 3 lines print?
 >>> print(s1 is s2)
 
 ```
-
 **Repo:**
 -   GitHub repository: `alx-higher_level_programming`
 -   Directory: `0x09-python-everything_is_object`
@@ -269,7 +265,6 @@ What do these 3 lines print?
 >>> print(l1 == l2)
 
 ```
-
 **Repo:**
 -   GitHub repository: `alx-higher_level_programming`
 -   Directory: `0x09-python-everything_is_object`
@@ -286,18 +281,14 @@ What do these 3 lines print?
 >>> print(l1 is l2)
 
 ```
-
 **Repo:**
-
 -   GitHub repository: `alx-higher_level_programming`
 -   Directory: `0x09-python-everything_is_object`
 -   File: `11-answer.txt`
 
+
+
 ### 12\. And with a list, is it really equal
-
-mandatory
-
-Score: 0.00% (Checks completed: 0.00%)
 
 What do these 3 lines print?
 
@@ -307,19 +298,14 @@ What do these 3 lines print?
 >>> print(l1 == l2)
 
 ```
-
 **Repo:**
-
 -   GitHub repository: `alx-higher_level_programming`
 -   Directory: `0x09-python-everything_is_object`
 -   File: `12-answer.txt`
 
+
+
 ### 13\. And with a list, is it really the same
-
-mandatory
-
-Score: 0.00% (Checks completed: 0.00%)
-
 What do these 3 lines print?
 
 ```
@@ -328,7 +314,6 @@ What do these 3 lines print?
 >>> print(l1 is l2)
 
 ```
-
 **Repo:**
 -   GitHub repository: `alx-higher_level_programming`
 -   Directory: `0x09-python-everything_is_object`
@@ -346,7 +331,6 @@ l1.append(4)
 print(l2)
 
 ```
-
 **Repo:**
 -   GitHub repository: `alx-higher_level_programming`
 -   Directory: `0x09-python-everything_is_object`
@@ -364,7 +348,6 @@ l1 = l1 + [4]
 print(l2)
 
 ```
-
 **Repo:**
 -   GitHub repository: `alx-higher_level_programming`
 -   Directory: `0x09-python-everything_is_object`
