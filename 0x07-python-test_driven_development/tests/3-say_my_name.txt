@@ -1,61 +1,23 @@
-A test to for adding two inteter
-
-Import Python module + collections
->>> import sys
->>> sys.path.insert(1, '../')
->>> lib = __import__("0-add_integer")
->>> add_integer = lib.add_integer
-
-# Normal addition test
->>> add_integer(0)
-98
->>> add_integer(-1)
-97
->>> add_integer(10.5)
-108
-
-# Type Errors
->>> add_integer(10+5j)
+>>> say_my_name = __import__("3-say_my_name").say_my_name
+>>> say_my_name("abebe", "beso")
+My name is abebe beso
+>>> say_my_name("chala")
+My name is chala 
+>>> say_my_name(5)
 Traceback (most recent call last):
-...
-TypeError: a must be an integer
->>> add_integer([])
+    ...
+TypeError: first_name must be a string
+>>> say_my_name("chala", 30)
 Traceback (most recent call last):
-...
-TypeError: a must be an integer
->>> add_integer({})
+    ...
+TypeError: last_name must be a string
+>>> say_my_name(50, 30)
 Traceback (most recent call last):
-...
-TypeError: a must be an integer
->>> add_integer(set())
+    ...
+TypeError: first_name must be a string
+>>> say_my_name("", "jo")
+My name is  jo
+>>> say_my_name()
 Traceback (most recent call last):
-...
-TypeError: a must be an integer
-
->>> add_integer("")
-Traceback (most recent call last):
-...
-TypeError: a must be an integer
-
-# Two input addition type errors
->>> add_integer(10, 10+5j)
-Traceback (most recent call last):
-...
-TypeError: b must be an integer
->>> add_integer(10, [])
-Traceback (most recent call last):
-...
-TypeError: b must be an integer
->>> add_integer(10, {})
-Traceback (most recent call last):
-...
-TypeError: b must be an integer
->>> add_integer(10, set())
-Traceback (most recent call last):
-...
-TypeError: b must be an integer
-
->>> add_integer(10, "")
-Traceback (most recent call last):
-...
-TypeError: b must be an integer
+  ...
+TypeError: say_my_name() missing 1 required positional argument: 'first_name'
