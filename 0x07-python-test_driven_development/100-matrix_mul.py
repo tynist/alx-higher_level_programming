@@ -15,51 +15,59 @@ def matrix_mul(m_a, m_b):
 
     ValueError - if m_a, m_b is empty (it means: = [] or = [[]]) or can’t be multiplied.
      """
-    if not isinstance(m_a, list):
+    if type(m_a) != list:
         raise TypeError("m_a must be a list")
-    if not isinstance(m_b, list):
+    if type(m_b) != list:
         raise TypeError("m_b must be a list")
-
-    if not all(isinstance(row, list) for row in m_a):
-        raise TypeError("m_a must be a list of lists")
-    if not all(isinstance(row, list) for row in m_b):
-        raise TypeError("m_b must be a list of lists")
-
-    if m_a == [] or m_a == [[]]:
+    if len(m_a) == 0:
         raise ValueError("m_a can't be empty")
-    if m_b == [] or m_b == [[]]:
+    # check the validity of the content of each elemtent
+    # for matrix a
+    if not all(type(row) == list for row in m_a):
+        raise TypeError("m_a must be a list of lists")
+    if len(m_a[0]) == 0:
+        raise ValueError("m_a can't be empty")
+
+    # check the validity of the content of each elemtent
+    # for matrix b
+    if not all(type(row) == list for row in m_b):
+        raise TypeError("m_b must be a list of lists")
+    if len(m_b) == 0:
+        raise ValueError("m_b can't be empty")
+    if len(m_b[0]) == 0:
         raise ValueError("m_b can't be empty")
 
-    if not all((isinstance(element, int) or isinstance(element, float))
-               for element in [number for row in m_a for number in row]):
+    # Check the validity of the content of each list
+    # inside each list of matrix a
+    row_len = len(m_a[0])
+    if not all(len(row) == row_len for row in m_a):
+        raise TypeError("each row of m_a must be of the same size")
+
+    if not all(type(num) in [int, float] for row in m_a for num in row):
         raise TypeError("m_a should contain only integers or floats")
-    if not all((isinstance(element, int) or isinstance(element, float))
-               for element in [number for row in m_b for number in row]):
+    # Check the validity of the content of each list
+    # inside each list of matrix a
+    row_len = len(m_b[0])
+    if not all(len(row) == row_len for row in m_b):
+        raise TypeError("each row of m_b must be of the same size")
+
+    if not all(type(num) in [int, float] for row in m_b for num in row):
         raise TypeError("m_b should contain only integers or floats")
-
-    if not all(len(row) == len(m_a[0]) for row in m_a):
-        raise TypeError("each row of m_a must should be of the same size")
-    if not all(len(row) == len(m_b[0]) for row in m_b):
-        raise TypeError("each row of m_b must should be of the same size")
-
-    if len(m_a[0]) != len(m_b):
+    # check if the two vectors are multipliable
+    acols = len(m_a[0])
+    arows = len(m_a)
+    brows = len(m_b)
+    bcols = len(m_b[0])
+    if acols != brows:
         raise ValueError("m_a and m_b can't be multiplied")
 
-    matrix1 = []
-    for i in range(len(m_b[0])):
-        my_row = []
-        for j in range(len(m_b)):
-            my_row.append(m_b[j][i])
-        matrix1.append(my_row)
-
-    matrix2 = []
-    for row in m_a:
-        my_row = []
-        for column in matrix1:
-            product = 0
-            for m in range(len(matrix1[0])):
-                product += row[m] * column[m]
-            my_row.append(product)
-        matrix2.append(my_row)
-
-    return matrix2
+    product = [[0 for x in range(bcols)] for y in range(arows)]
+    for row_i in range(len(m_a)):
+        col_b = 0
+        while (col_b < bcols):
+            sum_t = 0
+            for col_i in range(len(m_a[row_i])):
+                sum_t += m_a[row_i][col_i] * m_b[col_i][col_b]
+            product[row_i][col_b] = sum_t
+            col_b += 1
+    return product
