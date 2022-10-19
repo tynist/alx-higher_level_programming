@@ -10,7 +10,7 @@ def print_square(size):
         TypeError - if size is not an integer, is a float and < 0,
         ValueError - if size < 0.
     """
-if type(size) != int:
+    if type(size) != int:
         raise TypeError("size must be an integer")
     if size < 0:
         raise ValueError("size must be >= 0")
