@@ -10,7 +10,8 @@ def matrix_divided(matrix, div):
                     used in dividing all elements of the matrix,
                     rounded to 2 decimal places.
     Raises:
-    TypeError - if list of lists is not integers or floats, if each row of the matrix is not same size.
+    TypeError - if list of lists is not integers or floats,
+                if each row of the matrix is not same size.
     ZeroDivisionError - if div equal to 0.
 
     Returns: new matrix.
