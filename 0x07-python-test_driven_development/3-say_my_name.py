@@ -11,8 +11,13 @@ def say_my_name(first_name, last_name=""):
     Raises:
     TypeError - if not a string.
     """
-    if type(first_name) != str:
+    names = [first_name, last_name]
+
+    if all(type(i) is str for i in names):
+        print("My name is {} {}".format(first name, last_name))
+
+    elif isinstance(first_name, str) is False:
         raise TypeError("first name must be a string")
-    if type(last_name) != str:
+
+    elif isinstance(last_name, str) is False:
         raise TypeError("last name must be a string")
-    print("My name is {} {}".format(first_name, last_name))
