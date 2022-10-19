@@ -1,45 +1,61 @@
-The ``say_my_name`` module
-===============================================================================
+A test to for adding two inteter
 
-Using ``say_my_name``
--------------------------------------------------------------------------------
+Import Python module + collections
+>>> import sys
+>>> sys.path.insert(1, '../')
+>>> lib = __import__("0-add_integer")
+>>> add_integer = lib.add_integer
 
-Import say_my_name form 3-say_my_name
+# Normal addition test
+>>> add_integer(0)
+98
+>>> add_integer(-1)
+97
+>>> add_integer(10.5)
+108
 
-    >>> say_my_name = __import__('3-say_my_name').say_my_name
+# Type Errors
+>>> add_integer(10+5j)
+Traceback (most recent call last):
+...
+TypeError: a must be an integer
+>>> add_integer([])
+Traceback (most recent call last):
+...
+TypeError: a must be an integer
+>>> add_integer({})
+Traceback (most recent call last):
+...
+TypeError: a must be an integer
+>>> add_integer(set())
+Traceback (most recent call last):
+...
+TypeError: a must be an integer
 
-It should print out the 'My name is <first_name> <last_name>'
+>>> add_integer("")
+Traceback (most recent call last):
+...
+TypeError: a must be an integer
 
-    >>> say_my_name('issam', 'sebri')
-    My name is issam sebri
+# Two input addition type errors
+>>> add_integer(10, 10+5j)
+Traceback (most recent call last):
+...
+TypeError: b must be an integer
+>>> add_integer(10, [])
+Traceback (most recent call last):
+...
+TypeError: b must be an integer
+>>> add_integer(10, {})
+Traceback (most recent call last):
+...
+TypeError: b must be an integer
+>>> add_integer(10, set())
+Traceback (most recent call last):
+...
+TypeError: b must be an integer
 
-It should work fine if we does'nt pass last_name
-
-    >>> say_my_name('issam')
-    My name is issam 
-
-It should ignore space if we pass empty first_name
-
-    >>> say_my_name('', 'sebri')
-    My name is  sebri
-
-It should raise exception if we pass somthing other than string for first_name
-
-    >>> say_my_name(100, 'sebri')
-    Traceback (most recent call last):
-        ...
-    TypeError: first_name must be a string
-
-It should raise exception if we pass somthing other than string for last_name
-
-    >>> say_my_name('issam', 98)
-    Traceback (most recent call last):
-        ...
-    TypeError: last_name must be a string
-
-It should raise exception if we pass something other than string for both
-
-    >>> say_my_name(100, 98)
-    Traceback (most recent call last):
-        ...
-    TypeError: first_name must be a string
+>>> add_integer(10, "")
+Traceback (most recent call last):
+...
+TypeError: b must be an integer
