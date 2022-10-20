@@ -13,7 +13,8 @@ def matrix_mul(m_a, m_b):
         one element of those list of lists is not an integer or a float,
         is not a rectangle (all ‘rows’ should be of the same size).
 
-    ValueError - if m_a, m_b is empty (it means: = [] or = [[]]) or can’t be multiplied.
+    ValueError - if m_a, m_b is empty (it means: = [] or = [[]])
+    or can’t be multiplied.
      """
     if type(m_a) != list:
         raise TypeError("m_a must be a list")
