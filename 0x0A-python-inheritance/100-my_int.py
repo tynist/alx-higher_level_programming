@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-7"""Class My Imteger"""
+"""Class My Imteger"""
 
 
 class MyInt(int):
