@@ -8,6 +8,7 @@ def is_kind_of_class(obj, a_class):
     (directly or indirectly) from the specified class;
     otherwi
     """
-    if issubclass(type(obj), a_class) and type(obj) != a_class:
+    if isinstance(obj, a_class) and \ issubclass(a_class, obj.__class__) is False:
         return True
+
     return False
