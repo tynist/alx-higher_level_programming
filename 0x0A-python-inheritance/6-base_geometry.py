@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Improves Geometry"""
 
+
 class BaseGeometry:
     """class BaseGeometry"""
     def area(self):
