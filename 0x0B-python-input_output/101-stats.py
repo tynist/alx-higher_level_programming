@@ -10,6 +10,7 @@ def print_pretty(size, code_dict):
         if (value != 0):
             print("{}: {}".format(key, value))
 
+
 if __name__ == '__main__':
     """init code to print the parsed data"""
     size = 0
