@@ -1,103 +1,39 @@
-# Python - Almost a circle
+# Higher-level programming & Algorithm
 
-![Circle](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/331/giphy.mp4)
+This repository contains solution programs written for the Higher-level programming & Algorithm projects/tasks.
+This is part of the Full Stack Software Engineer program organized by Alx Africa which occurred throughout the duration of the year 2022 June, cohort08 curriculum.
+ The projects are written in py programming language.
 
-In this project, I encapsulated skills in Python object-oriented programming by coding three connected classes to represent rectangles and squares. I wrote my own test suite using the `unittest` module to test all functionality for each class.
+## Table of contents
 
-The three classes involved utilizing the following Python tools:
-* Import
-* Exceptions
-* Private attributes
-* Getter/setter
-* Class/static methods
-* Inheritance
-* File I/O
-* `args`/`kwargs`
-* JSON and CSV serialization/deserialization
-* Unittesting
+* [0x00. Python - Hello, World](https://github.com/adeleke123/alx-higher_level_programming/tree/main/0x00-python-hello_world)
+* [0x01. Python - if_else_loops_functions](https://github.com/adeleke123/alx-higher_level_programming/tree/main/0x01-python-if_else_loops_functions)
+* [0x02. Python - import modules](https://github.com/adeleke123/alx-higher_level_programming/tree/main/0x02-python-import_modules)
+* [0x03. Python - Data Structures: Lists, Tuples](https://github.com/adeleke123/alx-higher_level_programming/tree/main/0x03-python-data_structures)
+* [0x04. Python - More Data Structures: Set, Dictionary](https://github.com/adeleke123/alx-higher_level_programming/tree/main/0x04-python-more_data_structures)
+* [0x05. Python - Exceptions](https://github.com/adeleke123/alx-higher_level_programming/tree/main/0x05-python-exceptions)
+* [0x06. Python - Classes and Objects](https://github.com/adeleke123/alx-higher_level_programming/tree/main/0x06-python-classes)
+* [0x07. Python - Test-driven development](https://github.com/adeleke123/alx-higher_level_programming/tree/main/0x07-python-test_driven_development)
+* [0x08. Python - More Classes and Objects](https://github.com/adeleke123/alx-higher_level_programming/tree/main/0x08-python-more_classes)
+* [0x09. Python - Everything is object](https://github.com/adeleke123/alx-higher_level_programming/tree/main/0x09-python-everything_is_object)
+* [0x0A. Python - Inheritance](https://github.com/tynist/alx-higher_level_programming/tree/main/0x0A-python-inheritance)
+* [0x0B. Python - Input/Output](https://github.com/tynist/alx-higher_level_programming/tree/main/0x0B-python-input_output)
+* [0x0C. Python - Almost a circle](https://github.com/tynist/alx-higher_level_programming/tree/main/0x0C-python-almost_a_circle)
 
-## Tests :heavy_check_mark:
 
-* [tests/test_models](./tests/test_models): Folder containing the following independently-developed test files:
-  * [test_base.py](./tests/test_models/test_base.py)
-  * [test_rectangle.py](./tests/test_models/test_rectangle.py)
-  * [test_square.py](./tests/test_models/test_square.py)
+## WARNING!
 
-## Classes :cl:
+* This repo is done as a school assignment. Beware of copying my responses. I recommend you to read resources and come up with your own solutions instead. Feel free to reach out for help!
+* This repo may contain some errors. If you notice any, please add a pull request.
 
-### Base
-Represents the "base" class for all other classes in the project. Includes:
 
-* Private class attribute `__nb_objects = 0`.
-* Public instance attribute `id`.
-* Class constructor `def __init__(self, id=None):`
-  * If `id` is `None`, increments `__nb_objects` and assigns its value to the public instance attribute `id`.
-  * Otherwise, sets the public instance attribute `id` to the provided `id`.
-* Static method `def to_json_string(list_dictionaries):` that returns the JSON string serialization of a list of dictionaries.
-  * If `list_dictionaries` is `None` or empty, returns the string `"[]"`.
-* Class method `def save_to_file(cls, list_objs):` that writes the JSON serialization of a list of objects to a file.
-  * The parameter `list_objs` is expected to be a list of `Base`-inherited instances.
-  * If `list_objs` is `None`, the function saves an empty list.
-  * The file is saved with the name `<cls name>.json` (ie. `Rectangle.json`)
-  * Overwrites the file if it already exists.
-* Static method `def from_json_string(json_string):` that returns a list of objects deserialized from a JSON string.
-  * The parameter `json_string` is expected to be a string representing a list of dictionaries.
-  * If `json_string` is `None` or empty, the function returns an empty list.
-* Class method `def create(cls, **dictionary):` that instantiates an object with provided attributes.
-  * Instantiates an object with the attributes given in `**dictionary`.
-* Class method `def load_from_file(cls):` that returns a list of objects instantiated from a JSON file.
-  * Reads from the JSON file `<cls name>.json` (ie. `Rectangle.json`)
-  * If the file does not exist, the function returns an empty list.
-* Class method `def save_to_file_csv(cls, list_objs):` that writes the CSV serialization of a list of objects to a file.
-  * The parameter `list_objs` is expected to be a list of `Base`-inherited instances.
-  * If `list_objs` is `None`, the function saves an empty list.
-  * The file is saved with the name `<cls name>.csv` (ie. `Rectangle.csv`)
-  * Serializes objects in the format `<id>,<width>,<height>,<x>,<y>` for `Rectangle` objects and `<id>,<size>,<x>,<y>` for `Square` objects.
-* Class method `def load_from_file_csv(cls):` that returns a list of objects instantiated from a CSV file.
-  * Reads from the CSV file `<cls name>.csv` (ie. `Rectangle.csv`)
-  * If the file does not exist, the function returns an empty list.
-* Static method `def draw(list_rectangles, list_squares):` that draws `Rectangle` and `Square` instances in a GUI window using the `turtle` module.
-  * The parameter `list_rectangles` is expected to be a list of `Rectangle` objects to print.
-  * The parameter `list_squares` is expected to be a list of `Square` objects to print.
 
-### Rectangle
+## Acknowledgements
+All work contained in this project was completed as part of the curriculum for ALX Africa Software Engineering program built upon Holberton School projects and materials. Holberton School is a campus-based full-stack software engineering program that prepares students for careers in the tech industry using project-based peer learning.
 
-Represents a rectangle. Inherits from `Base` with:
 
-* Private instance attributes `__width`, `__height`, `__x`, and `__y`.
-  * Each private instance attribute features its own getter/setter.
-* Class constructor `def __init__(self, width, height, x=0, y=0, id=None):`
-  * If either of `width`, `height`, `x`, or `y` is not an integer, raises a `TypeError` exception with the message `<attribute> must be an integer`.
-  * If either of `width` or `height` is >= 0, raises a `ValueError` exception with the message `<attribute> must be > 0`.
-  * If either of `x` or `y` is less than 0, raises a `ValueError` exception with the message `<attribute> must be >= 0`.
-* Public method `def area(self):` that returns the area of the `Rectangle` instance.
-* Public method `def display(self):` that prints the `Rectangle` instance to `stdout` using the `#` character.
-  * Prints new lines for the `y` coordinate and spaces for the `x` coordinate.
-* Overwrite of `__str__` method to print a `Rectangle` instance in the format `[Rectangle] (<id>) <x>/<y>`.
-* Public method `def update(self, *args, **kwargs):` that updates an instance of a `Rectangle` with the given attributes.
-  * `*args` must be supplied in the following order:
-    * 1st: `id`
-    * 2nd: `width`
-    * 3rd: `height`
-    * 4th: `x`
-    * 5th: `y`
-  * `**kwargs` is expected to be a double pointer to a dictionary of new key/value attributes to update the `Rectangle` with.
-  * `**kwargs` is skipped if `*args` exists.
-* Public method `def to_dictionary(self):` that returns the dictionary representation of a `Rectangle` instance.
+## Credits
 
-### Square
-
-Represents a square. Inherits from `Rectangle` with:
-
-* Class constructor `def __init__(self, size, x=0, y=0, id=None):`
-  * The `width` and `height` of the `Rectangle` superclass are assigned using the value of `size`.
-* Overwrite of `__str__` method to print a `Square` instance in the format `[Square] (<id>) <x>/<y>`.
-* Public method `def update(self, *args, **kwargs):` that updates an instance of a `Square` with the given attributes.
-  * `*args` must be supplied in the following order:
-    * 1st: `id`
-    * 2nd: `size`
-    * 3rd: `x`
-    * 4th: `y`
-  * `**kwargs` is expected to be a double pointer to a dictoinary of new key/value attributes to update the `Square` with.
-  * `**kwargs` is skipped if `*args` exists.
-* Public method `def to_dictionary(self):` that returns the dictionary representation of a `Square`.
+For more information, visit this link.
+* [ALX](https://www.alxafrica.com/)
+* [Holberton School](https://www.holbertonschool.com/)
