@@ -56,6 +56,12 @@ At the end of this project, you are expected to be able to [explain to anyone](h
 -   What is `**kwargs` and how to use it
 -   How to handle named arguments in a function
 
+### Copyright - Plagiarism
+-   You are tasked to come up with solutions for the tasks below yourself to meet with the above learning objectives.
+-   You will not be able to meet the objectives of this or any following project by copying and pasting someone else’s work.
+-   You are not allowed to publish any content of this project.
+-   Any form of plagiarism is strictly forbidden and will result in removal from the program.
+
 Requirements
 ------------
 
@@ -87,13 +93,11 @@ Requirements
 -   You can also test file by file, by using this command: `python3 -m unittest tests/test_models/test_base.py`
 -   We strongly encourage you to work together on test cases so that you don't miss any edge case
 
+
 Tasks
 -----
 
 ### 0\. If it's not tested it doesn't work
-
-mandatory
-
 All your files, classes and methods must be unit tested and be PEP 8 validated.
 
 ```
@@ -117,12 +121,8 @@ guillaume@ubuntu:~/$
 -   Directory: `0x0C-python-almost_a_circle`
 -   File: `tests/`
 
- Done? Help
 
 ### 1\. Base class
-
-mandatory
-
 Write the first class `Base`:
 
 Create a folder named `models` with an empty file `__init__.py` inside - with this file, the folder will become a Python package
@@ -176,12 +176,8 @@ guillaume@ubuntu:~/$
 -   Directory: `0x0C-python-almost_a_circle`
 -   File: `models/base.py, models/__init__.py`
 
- Done? Help
 
 ### 2\. First Rectangle
-
-mandatory
-
 Write the class `Rectangle` that inherits from `Base`:
 
 -   In the file `models/rectangle.py`
@@ -233,9 +229,6 @@ guillaume@ubuntu:~/$
  Done? Help
 
 ### 3\. Validate attributes
-
-mandatory
-
 Update the class `Rectangle` by adding validation of all setter methods and instantiation (`id` excluded):
 
 -   If the input is not an integer, raise the `TypeError` exception with the message: `<name of the attribute> must be an integer`. Example: `width must be an integer`
@@ -290,9 +283,6 @@ guillaume@ubuntu:~/$
  Done? Help
 
 ### 4\. Area first
-
-mandatory
-
 Update the class `Rectangle` by adding the public method `def area(self):` that returns the area value of the `Rectangle` instance.
 
 ```
@@ -326,12 +316,8 @@ guillaume@ubuntu:~/$
 -   Directory: `0x0C-python-almost_a_circle`
 -   File: `models/rectangle.py`
 
- Done? Help
 
 ### 5\. Display #0
-
-mandatory
-
 Update the class `Rectangle` by adding the public method `def display(self):` that prints in stdout the `Rectangle` instance with the character `#` - you don't need to handle `x` and `y` here.
 
 ```
@@ -370,12 +356,8 @@ guillaume@ubuntu:~/$
 -   Directory: `0x0C-python-almost_a_circle`
 -   File: `models/rectangle.py`
 
- Done? Help
 
 ### 6\. __str__
-
-mandatory
-
 Update the class `Rectangle` by overriding the `__str__` method so that it returns `[Rectangle] (<id>) <x>/<y> - <width>/<height>`
 
 ```
@@ -405,12 +387,8 @@ guillaume@ubuntu:~/$
 -   Directory: `0x0C-python-almost_a_circle`
 -   File: `models/rectangle.py`
 
- Done? Help
 
 ### 7\. Display #1
-
-mandatory
-
 Update the class `Rectangle` by improving the public method `def display(self):` to print in stdout the `Rectangle` instance with the character `#` by taking care of `x` and `y`
 
 ```
@@ -448,12 +426,9 @@ guillaume@ubuntu:~/$
 -   Directory: `0x0C-python-almost_a_circle`
 -   File: `models/rectangle.py`
 
- Done? Help
+
 
 ### 8\. Update #0
-
-mandatory
-
 Update the class `Rectangle` by adding the public method `def update(self, *args):` that assigns an argument to each attribute:
 
 -   1st argument should be the `id` attribute
@@ -507,12 +482,9 @@ guillaume@ubuntu:~/$
 -   Directory: `0x0C-python-almost_a_circle`
 -   File: `models/rectangle.py`
 
- Done? Help
+
 
 ### 9\. Update #1
-
-mandatory
-
 Update the class `Rectangle` by updating the public method `def update(self, *args):` by changing the prototype to `update(self, *args, **kwargs)` that assigns a key/value argument to attributes:
 
 -   `**kwargs` can be thought of as a double pointer to a dictionary: key/value
@@ -561,12 +533,9 @@ guillaume@ubuntu:~/$
 -   Directory: `0x0C-python-almost_a_circle`
 -   File: `models/rectangle.py`
 
- Done? Help
+
 
 ### 10\. And now, the Square!
-
-mandatory
-
 Write the class `Square` that inherits from `Rectangle`:
 
 -   In the file `models/square.py`
@@ -636,12 +605,9 @@ guillaume@ubuntu:~/$
 -   Directory: `0x0C-python-almost_a_circle`
 -   File: `models/square.py`
 
- Done? Help
+
 
 ### 11\. Square size
-
-mandatory
-
 Update the class `Square` by adding the public getter and setter `size`
 
 -   The setter should assign (in this order) the `width` and the `height` - with the same value
@@ -681,12 +647,9 @@ guillaume@ubuntu:~/$
 -   Directory: `0x0C-python-almost_a_circle`
 -   File: `models/square.py`
 
- Done? Help
+
 
 ### 12\. Square update
-
-mandatory
-
 Update the class `Square` by adding the public method `def update(self, *args, **kwargs)` that assigns attributes:
 
 -   `*args` is the list of arguments - no-keyword arguments
@@ -749,12 +712,9 @@ guillaume@ubuntu:~/$
 -   Directory: `0x0C-python-almost_a_circle`
 -   File: `models/square.py`
 
- Done? Help
+
 
 ### 13\. Rectangle instance to dictionary representation
-
-mandatory
-
 Update the class `Rectangle` by adding the public method `def to_dictionary(self):` that returns the dictionary representation of a `Rectangle`:
 
 This dictionary must contain:
@@ -802,12 +762,9 @@ guillaume@ubuntu:~/$
 -   Directory: `0x0C-python-almost_a_circle`
 -   File: `models/rectangle.py`
 
- Done? Help
+
 
 ### 14\. Square instance to dictionary representation
-
-mandatory
-
 Update the class `Square` by adding the public method `def to_dictionary(self):` that returns the dictionary representation of a `Square`:
 
 This dictionary must contain:
@@ -854,12 +811,9 @@ guillaume@ubuntu:~/$
 -   Directory: `0x0C-python-almost_a_circle`
 -   File: `models/square.py`
 
- Done? Help
+
 
 ### 15\. Dictionary to JSON string
-
-mandatory
-
 JSON is one of the standard formats for sharing data representation.
 
 Update the class `Base` by adding the static method `def to_json_string(list_dictionaries):` that returns the JSON string representation of `list_dictionaries`:
@@ -900,12 +854,9 @@ guillaume@ubuntu:~/$
 -   Directory: `0x0C-python-almost_a_circle`
 -   File: `models/base.py`
 
- Done? Help
+
 
 ### 16\. JSON string to file
-
-mandatory
-
 Update the class `Base` by adding the class method `def save_to_file(cls, list_objs):` that writes the JSON string representation of `list_objs` to a file:
 
 -   `list_objs` is a list of instances who inherits of `Base` - example: list of `Rectangle` or list of `Square` instances
@@ -941,12 +892,9 @@ guillaume@ubuntu:~/$
 -   Directory: `0x0C-python-almost_a_circle`
 -   File: `models/base.py`
 
- Done? Help
+
 
 ### 17\. JSON string to dictionary
-
-mandatory
-
 Update the class `Base` by adding the static method `def from_json_string(json_string):` that returns the list of the JSON string representation `json_string`:
 
 -   `json_string` is a string representing a list of dictionaries
@@ -985,12 +933,9 @@ guillaume@ubuntu:~/$
 -   Directory: `0x0C-python-almost_a_circle`
 -   File: `models/base.py`
 
- Done? Help
+
 
 ### 18\. Dictionary to Instance
-
-mandatory
-
 Update the class `Base` by adding the class method `def create(cls, **dictionary):` that returns an instance with all attributes already set:
 
 -   `**dictionary` can be thought of as a double pointer to a dictionary
@@ -1032,12 +977,9 @@ guillaume@ubuntu:~/$
 -   Directory: `0x0C-python-almost_a_circle`
 -   File: `models/base.py`
 
- Done? Help
+
 
 ### 19\. File to instances
-
-mandatory
-
 Update the class `Base` by adding the class method `def load_from_file(cls):` that returns a list of instances:
 
 -   The filename must be: `<Class name>.json` - example: `Rectangle.json`
