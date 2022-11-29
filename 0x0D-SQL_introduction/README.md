@@ -1,25 +1,20 @@
 
 0x0D. SQL - Introduction
-SQL
-MySQL
- By: Guillaume
- Weight: 1
- Project will start Nov 29, 2022 6:00 AM, must end by Nov 30, 2022 6:00 AM
- was released at Nov 29, 2022 12:00 PM
- An auto review will be launched at the deadline
-Concepts
-For this project, we expect you to look at these concepts:
+========================
 
-Databases
-Databases
+### Concepts
+*For this project, we expect you to look at these concepts:*
+-  Databases
+-  Databases
 
 
 Resources
-Read or watch:
+---------
+**Read or watch**:
 
-What is Database & SQL?
-A Basic MySQL Tutorial
-Basic SQL statements: DDL and DML (no need to read the chapter “Privileges”)
+-  [What is Database & SQL?](https://alx-intranet.hbtn.io/rltoken/yyRKTEdRkYEVlRgZPbasjw)
+-  [A Basic MySQL Tutorial](https://alx-intranet.hbtn.io/rltoken/sV2PtK5YfQsXWW1malRZ5Q)
+-  [Basic SQL statements: DDL and DML (*no need to read the chapter “Privileges”*)](https://alx-intranet.hbtn.io/rltoken/IUKo4-UaRZSKPvXr5u9oBw)
 Basic queries: SQL and RA
 SQL technique: functions
 SQL technique: subqueries
