@@ -1,6 +1,5 @@
 -- Use 'hbtn_0d_tvshows' to list all genres not linked to show 'Dexter'
 -- 'tv_shows' table contains only one record where title = Dexter
--- Each record should display tv_genres.name
 SELECT g.name
 FROM tv_genres g
 WHERE g.name NOT IN (
