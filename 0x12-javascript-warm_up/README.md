@@ -501,11 +501,11 @@ Hint: Scope
 
 
 ### 15\. Call me Moby
-Write a function that executes x times a function.
+Write a function that executes `x` times a function.
 
 The function must be visible from outside
-Prototype: function (x, theFunction)
-You are not allowed to use var
+Prototype: `function (x, theFunction)`
+You are not allowed to use `var`
 
 ```
 guillaume@ubuntu:~/0x12$ cat 101-main.js
@@ -532,8 +532,8 @@ guillaume@ubuntu:~/0x12$
 Write a function that increments and calls a function.
 
 The function must be visible from outside
-Prototype: function (number, theFunction)
-You are not allowed to use var
+Prototype: `function (number, theFunction)`
+You are not allowed to use `var`
 
 ```
 guillaume@ubuntu:~/0x12$ cat 102-main.js
@@ -555,10 +555,9 @@ guillaume@ubuntu:~/0x12$
 
 
 ### 17\. Increment object
-#advanced
-Update this script by adding a new function incr that increments the integer value.
+Update this script by adding a new function `incr` that increments the integer `value`.
 
-You are not allowed to use var
+You are not allowed to use `var`
 
 ```
 guillaume@ubuntu:~/0x12$ cat 103-object_fct.js
