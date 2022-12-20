@@ -6,10 +6,10 @@ class Square extends Ssquare {
     if (!c) {
       this.print();
     } else {
-      for (let index = 0; index < this.height; index++) {
+      for (let i = 0; i < this.height; i++) {
         console.log(c.repeat(this.width));
       }
     }
   }
 }
-module.exports = Square;.
+module.exports = Square;
