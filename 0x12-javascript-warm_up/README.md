@@ -334,15 +334,16 @@ guillaume@ubuntu:~/0x12$
 
 
 
-9. Add
-mandatory
+### 9\. Add
 Write a script that prints the addition of 2 integers
 
-The first argument is the first integer
-The second argument is the second integer
-You have to define a function with this prototype: function add(a, b)
-You must use console.log(...) to print all output
-You are not allowed to use var
+-  The first argument is the first integer
+-  The second argument is the second integer
+-  You have to define a function with this prototype: `function add(a, b)`
+-  You must use `console.log(...)` to print all output
+-  You are not allowed to use `var`
+
+```
 guillaume@ubuntu:~/0x12$ ./9-add.js 
 NaN
 guillaume@ubuntu:~/0x12$ ./9-add.js 1
@@ -352,22 +353,26 @@ guillaume@ubuntu:~/0x12$ ./9-add.js 1 7
 guillaume@ubuntu:~/0x12$ ./9-add.js 13 89
 102
 guillaume@ubuntu:~/0x12$ 
-Repo:
+```
 
-GitHub repository: alx-higher_level_programming
-Directory: 0x12-javascript-warm_up
-File: 9-add.js
-   
-10. Factorial
-mandatory
+**Repo:**
+-  GitHub repository: `alx-higher_level_programming`
+-  Directory: `0x12-javascript-warm_up`
+-  File: `9-add.js`
+
+
+
+### 10\. Factorial
 Write a script that computes and prints a factorial
 
-The first argument is integer (argument can be cast as integer) used for computing the factorial
-Factorial of NaN is 1
-You must do it recursively
-You must use a function
-You must use console.log(...) to print all output
-You are not allowed to use var
+-  The first argument is integer (argument can be cast as integer) used for computing the factorial
+-  Factorial of `NaN` is `1`
+-  You must do it recursively
+-  You must use a function
+-  You must use `console.log(...)` to print all output
+-  You are not allowed to use `var`
+
+```
 guillaume@ubuntu:~/0x12$ ./10-factorial.js 
 1
 guillaume@ubuntu:~/0x12$ ./10-factorial.js 3
@@ -377,21 +382,25 @@ guillaume@ubuntu:~/0x12$ ./10-factorial.js 89
 guillaume@ubuntu:~/0x12$ ./10-factorial.js 333
 Infinity
 guillaume@ubuntu:~/0x12$ 
-Repo:
+```
 
-GitHub repository: alx-higher_level_programming
-Directory: 0x12-javascript-warm_up
-File: 10-factorial.js
-   
-11. Second biggest!
-mandatory
+**Repo:**
+-  GitHub repository: `alx-higher_level_programming`
+-  Directory: `0x12-javascript-warm_up`
+-  File: `10-factorial.js`
+
+
+
+### 11\. Second biggest!
 Write a script that searches the second biggest integer in the list of arguments.
 
-You can assume all arguments can be converted to integer
-If no argument passed, print 0
-If the number of arguments is 1, print 0
-You must use console.log(...) to print all output
-You are not allowed to use var
+-  You can assume all arguments can be converted to integer
+-  If no argument passed, print `0`
+-  If the number of arguments is `1`, print `0`
+-  You must use `console.log(...)` to print all output
+-  You are not allowed to use `var`
+
+```
 guillaume@ubuntu:~/0x12$ ./11-second_biggest.js 
 0
 guillaume@ubuntu:~/0x12$ ./11-second_biggest.js 1
@@ -399,17 +408,21 @@ guillaume@ubuntu:~/0x12$ ./11-second_biggest.js 1
 guillaume@ubuntu:~/0x12$ ./11-second_biggest.js 4 2 5 3 0 -3
 4
 guillaume@ubuntu:~/0x12$ 
-Repo:
+```
 
-GitHub repository: alx-higher_level_programming
-Directory: 0x12-javascript-warm_up
-File: 11-second_biggest.js
-  
-12. Object
-mandatory
-Update this script to replace the value 12 with 89:
+**Repo:**
+-  GitHub repository: `alx-higher_level_programming`
+-  Directory: `0x12-javascript-warm_up`
+-  File: `11-second_biggest.js`
 
-You are not allowed to use var
+
+
+### 12\. Object
+
+Update this script to replace the value `12` with `89`:
+-  You are not allowed to use `var`
+
+```
 guillaume@ubuntu:~/0x12$ cat 12-object.js
 #!/usr/bin/node
 const myObject = {
@@ -426,21 +439,24 @@ guillaume@ubuntu:~/0x12$ ./12-object.js
 { type: 'object', value: 12 }
 { type: 'object', value: 89 }
 guillaume@ubuntu:~/0x12$ 
-Repo:
+```
 
-GitHub repository: alx-higher_level_programming
-Directory: 0x12-javascript-warm_up
-File: 12-object.js
-   
-13. Add file
-mandatory
+**Repo:**
+-  GitHub repository: `alx-higher_level_programming`
+-  Directory: `0x12-javascript-warm_up`
+-  File: `12-object.js`
+
+
+
+### 13\. Add file
 Write a function that returns the addition of 2 integers.
 
-The function must be visible from outside
-The name of the function must be add
-You are not allowed to use var
-Tip
+-  The function must be visible from outside
+-  The name of the function must be add
+-  You are not allowed to use var
+[Tip](https://alx-intranet.hbtn.io/rltoken/1k6VPdLchwtGubOfPyGL1Q)
 
+```
 guillaume@ubuntu:~/0x12$ cat 13-main.js
 #!/usr/bin/node
 const add = require('./13-add').add;
@@ -448,16 +464,19 @@ console.log(add(3, 5));
 guillaume@ubuntu:~/0x12$ ./13-main.js
 8
 guillaume@ubuntu:~/0x12$ 
-Repo:
+```
 
-GitHub repository: alx-higher_level_programming
-Directory: 0x12-javascript-warm_up
-File: 13-add.js
-  
-14. Const or not const
-#advanced
+**Repo:**
+-  GitHub repository: `alx-higher_level_programming`
+-  Directory: `0x12-javascript-warm_up`
+-  File: `13-add.js`
+
+
+
+### 14\. Const or not const
 Write a file that modifies the value of myVar to 333
 
+```
 guillaume@ubuntu:~/0x12$ cat 100-main.js
 #!/usr/bin/node
 myVar = 89;
@@ -466,27 +485,27 @@ console.log(myVar);
 guillaume@ubuntu:~/0x12$ ./100-main.js
 333
 guillaume@ubuntu:~/0x12$ 
-
+```
 
 Do you get it? Tweet! Post! Talk about it!
-
 Hint: Scope
+**This exercise doesn’t pass** `semistandard` so don’t worry about it.
 
-This exercise doesn’t pass semistandard so don’t worry about it.
+**Repo:**
+-  GitHub repository: `alx-higher_level_programming`
+-  Directory: `0x12-javascript-warm_up`
+-  File: `100-let_me_const.js`
 
-Repo:
 
-GitHub repository: alx-higher_level_programming
-Directory: 0x12-javascript-warm_up
-File: 100-let_me_const.js
-  
-15. Call me Moby
-#advanced
+
+### 15\. Call me Moby
 Write a function that executes x times a function.
 
 The function must be visible from outside
 Prototype: function (x, theFunction)
 You are not allowed to use var
+
+```
 guillaume@ubuntu:~/0x12$ cat 101-main.js
 #!/usr/bin/node
 const callMeMoby = require('./101-call_me_moby').callMeMoby;
@@ -498,19 +517,23 @@ C is fun
 C is fun
 C is fun
 guillaume@ubuntu:~/0x12$ 
-Repo:
+```
 
-GitHub repository: alx-higher_level_programming
-Directory: 0x12-javascript-warm_up
-File: 101-call_me_moby.js
+**Repo:**
+-  GitHub repository: `alx-higher_level_programming`
+-  Directory: `0x12-javascript-warm_up`
+-  File: `101-call_me_moby.js`
    
-16. Add me maybe
-#advanced
+
+
+### 16\. Add me maybe
 Write a function that increments and calls a function.
 
 The function must be visible from outside
 Prototype: function (number, theFunction)
 You are not allowed to use var
+
+```
 guillaume@ubuntu:~/0x12$ cat 102-main.js
 #!/usr/bin/node
 const addMeMaybe = require('./102-add_me_maybe').addMeMaybe;
@@ -520,17 +543,22 @@ addMeMaybe(4, function (nb) {
 guillaume@ubuntu:~/0x12$ ./102-main.js
 New value: 5
 guillaume@ubuntu:~/0x12$ 
-Repo:
+```
 
-GitHub repository: alx-higher_level_programming
-Directory: 0x12-javascript-warm_up
-File: 102-add_me_maybe.js
-   
-17. Increment object
+**Repo:**
+-  GitHub repository: `alx-higher_level_programming`
+-  Directory: `0x12-javascript-warm_up`
+-  File: `102-add_me_maybe.js`
+
+
+
+### 17\. Increment object
 #advanced
 Update this script by adding a new function incr that increments the integer value.
 
 You are not allowed to use var
+
+```
 guillaume@ubuntu:~/0x12$ cat 103-object_fct.js
 #!/usr/bin/node
 const myObject = {
@@ -554,10 +582,9 @@ guillaume@ubuntu:~/0x12$ ./103-object_fct.js
 { type: 'object', value: 14, incr: [Function] }
 { type: 'object', value: 15, incr: [Function] }
 guillaume@ubuntu:~/0x12$ 
-Repo:
+```
 
-GitHub repository: alx-higher_level_programming
-Directory: 0x12-javascript-warm_up
-File: 103-object_fct.js
-   
-Copyright © 2022 ALX, All rights reserved.
+**Repo:**
+-  GitHub repository: `alx-higher_level_programming`
+-  Directory: `0x12-javascript-warm_up`
+-  File: `103-object_fct.js`
