@@ -488,7 +488,9 @@ guillaume@ubuntu:~/0x12$
 ```
 
 Do you get it? Tweet! Post! Talk about it!
+
 Hint: Scope
+
 **This exercise doesn’t pass** `semistandard` so don’t worry about it.
 
 **Repo:**
