@@ -1,8 +1,12 @@
 #!/usr/bin/node
-const list = require('./100-data').list;
-const newList = list.map(function (nbr, i) {
-  return nbr * i;
-});
+const dict = require('./101-data.js').dict;
+const newDict = {};
 
-console.log(list);
-console.log(newList);
+Object.getOwnPropertyNames(dict).forEach(occurences => {
+  if (newDict[dict[occurences]] === undefined) {
+    newDict[dict[occurences]] = [occurences];
+  } else {
+    newDict[dict[occurences]].push(occurences);
+  }
+});
+console.log(newDict);
