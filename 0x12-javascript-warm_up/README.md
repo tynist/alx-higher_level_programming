@@ -14,7 +14,7 @@ Resources
 ---------
 
 **Read or watch:**
-=  [Writing JavaScript Code](https://alx-intranet.hbtn.io/rltoken/3HLjEesLsmyWfRUWnxgUGg)
+-  [Writing JavaScript Code](https://alx-intranet.hbtn.io/rltoken/3HLjEesLsmyWfRUWnxgUGg)
 -  [Variables](https://alx-intranet.hbtn.io/rltoken/zgOWmcpVLZFEmFlmuwayyg)
 -  [Data Types](https://alx-intranet.hbtn.io/rltoken/VPd6JWaLrwOBzjAeXNAEqg)
 -  [Operators](https://alx-intranet.hbtn.io/rltoken/3HLjEesLsmyWfRUWnxgUGg)
