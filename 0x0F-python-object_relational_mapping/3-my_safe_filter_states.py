@@ -1,14 +1,13 @@
 #!/usr/bin/python3
-"""
-SelectStates module
-"""
+"""SSQL Injection"""
 import MySQLdb
 import sys
 
 
 def safe_find_state():
-    """Finds states with the given name in database"""
-
+    """Display all the states with the given name
+    in the database
+    """
     username = sys.argv[1]
     password = sys.argv[2]
     database = sys.argv[3]
@@ -32,6 +31,7 @@ def safe_find_state():
         print(row)
     cur.close()
     db.close()
+
 
 if __name__ == "__main__":
     safe_find_state()
