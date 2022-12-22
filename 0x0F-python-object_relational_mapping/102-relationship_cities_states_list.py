@@ -1,7 +1,5 @@
 #!/usr/bin/python3
-"""
-StateCity module
-"""
+"""State city module"""
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy import create_engine
 from relationship_state import Base, State
@@ -10,7 +8,7 @@ import sys
 
 
 def fetch_city_state():
-    """Fetches states cities"""
+    """Gets all states cities in database"""
     username = sys.argv[1]
     password = sys.argv[2]
     database = sys.argv[3]
@@ -28,6 +26,7 @@ def fetch_city_state():
 
     session.commit()
     session.close()
+
 
 if __name__ == "__main__":
     fetch_city_state()
