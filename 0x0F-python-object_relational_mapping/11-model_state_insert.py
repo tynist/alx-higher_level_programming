@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Adds BewbStatt3
+Adds new state
 """
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy import create_engine
