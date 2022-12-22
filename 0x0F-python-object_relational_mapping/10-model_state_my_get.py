@@ -1,7 +1,5 @@
 #!/usr/bin/python3
-"""
-State module
-"""
+"""Gets a State"""
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy import create_engine
 from model_state import Base, State
@@ -9,7 +7,7 @@ import sys
 
 
 def fetch_all():
-    """Fetches all states"""
+    """Prints the states"""
     username = sys.argv[1]
     password = sys.argv[2]
     database = sys.argv[3]
@@ -28,6 +26,7 @@ def fetch_all():
     else:
         print("Not found")
     session.close()
+
 
 if __name__ == "__main__":
     fetch_all()
