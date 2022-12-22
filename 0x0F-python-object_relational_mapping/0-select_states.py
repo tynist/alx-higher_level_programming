@@ -1,13 +1,13 @@
 #!/usr/bin/python3
 """SelectStates module"""
+
+
 import MySQLdb
 import sys
 
 
 def select_states():
     """Grabs states from database"""
-
-
     username = sys.argv[1]
     password = sys.argv[2]
     database = sys.argv[3]
@@ -28,4 +28,3 @@ def select_states():
 
 if __name__ == "__main__":
     select_states()
-    
