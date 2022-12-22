@@ -1,7 +1,5 @@
 #!/usr/bin/python3
-"""
-StateCity module
-"""
+"""List relationship"""
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy import create_engine
 from relationship_state import Base, State
