@@ -7,6 +7,7 @@ import sys
 def select_states():
     """Grabs states from database"""
 
+
     username = sys.argv[1]
     password = sys.argv[2]
     database = sys.argv[3]
