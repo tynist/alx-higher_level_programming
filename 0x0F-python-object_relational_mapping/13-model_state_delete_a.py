@@ -6,7 +6,7 @@ from sqlalchemy import create_engine
 from model_state import Base, State
 import sys
 
-Y
+
 def delete_state():
     """Deletes all State objects with a name containing
     the letter a in the database
@@ -28,6 +28,7 @@ def delete_state():
 
     session.commit()
     session.close()
+
 
 if __name__ == "__main__":
     delete_state()
