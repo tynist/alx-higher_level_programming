@@ -1,11 +1,12 @@
 #!/usr/bin/python3
-"""Gets all states"""
+"""SelectStates"""
 import MySQLdb
 import sys
 
 
 def select_states():
     """Gets states from database"""
+
     username = sys.argv[1]
     password = sys.argv[2]
     database = sys.argv[3]
@@ -18,7 +19,7 @@ def select_states():
                          )
     cur = db.cursor()
     cur.execute('SELECT * FROM states ORDER BY id ASC')
-    rows = curr.fetchall()
+    rows = cur.fetchall()
     for row in rows:
         print(row)
     cur.close()
