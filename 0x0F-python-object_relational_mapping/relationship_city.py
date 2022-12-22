@@ -1,14 +1,12 @@
 #!/usr/bin/python3
-"""
-City module
-"""
+"""City class model"""
 from sqlalchemy import Column, Integer, String, ForeignKey
 from sqlalchemy.ext.declarative import declarative_base
 from relationship_state import Base, State
 
 
 class City(Base):
-    """City model class"""
+    """City class"""
     __tablename__ = 'cities'
     id = Column(Integer,
                 primary_key=True,
