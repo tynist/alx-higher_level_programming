@@ -1,11 +1,11 @@
 #!/usr/bin/python3
-"""SelectStates module"""
+"""Gets all states"""
 import MySQLdb
 import sys
 
 
 def select_states():
-    """Grabs states from database"""
+    """Gets states from database"""
     username = sys.argv[1]
     password = sys.argv[2]
     database = sys.argv[3]
@@ -13,16 +13,16 @@ def select_states():
     db = MySQLdb.connect(host='localhost',
                          port=3306,
                          user=username,
-                         pwrd=password,
-                         datab=database
+                         passwd=password,
+                         db=database
                          )
-    cur = datab.cursor()
+    cur = db.cursor()
     cur.execute('SELECT * FROM states ORDER BY id ASC')
     rows = curr.fetchall()
     for row in rows:
         print(row)
     cur.close()
-    datab.close()
+    db.close()
 
 
 if __name__ == "__main__":
