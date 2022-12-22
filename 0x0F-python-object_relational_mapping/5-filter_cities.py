@@ -1,14 +1,11 @@
 #!/usr/bin/python3
-"""
-SelectStates module
-"""
+"""SelectStates module"""
 import MySQLdb
 import sys
 
 
 def find_cities():
     """Selects all cities in database"""
-
     username = sys.argv[1]
     password = sys.argv[2]
     database = sys.argv[3]
@@ -37,6 +34,7 @@ def find_cities():
     print(', '.join(lst))
     cur.close()
     db.close()
+
 
 if __name__ == "__main__":
     find_cities()
