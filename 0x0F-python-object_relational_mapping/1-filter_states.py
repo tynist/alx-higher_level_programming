@@ -1,14 +1,13 @@
 #!/usr/bin/python3
-"""
-SelectStates module
-"""
+"""Filter States"""
 import MySQLdb
 import sys
 
 
 def filter_states():
-    """Filters states from database"""
-
+    """Filter states from database by listing all states
+    with a name starting with N (upper N)
+    """
     username = sys.argv[1]
     password = sys.argv[2]
     database = sys.argv[3]
@@ -30,6 +29,7 @@ def filter_states():
         print(row)
     cur.close()
     db.close()
+
 
 if __name__ == "__main__":
     filter_states()
