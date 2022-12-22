@@ -1,7 +1,5 @@
 #!/usr/bin/python3
-"""
-State module
-"""
+"""City relationship"""
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy import create_engine
 from relationship_state import Base, State
@@ -10,7 +8,7 @@ import sys
 
 
 def create_state_cities():
-    """Fetches all states"""
+    """Improves all states"""
     username = sys.argv[1]
     password = sys.argv[2]
     database = sys.argv[3]
@@ -30,6 +28,7 @@ def create_state_cities():
     session.add(new_city)
     session.commit()
     session.close()
+
 
 if __name__ == "__main__":
     create_state_cities()
