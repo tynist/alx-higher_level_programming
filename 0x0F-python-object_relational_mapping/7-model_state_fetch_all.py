@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-State module
+All states via SQLAlchemy
 """
 from sqlalchemy import text
 from sqlalchemy.orm import sessionmaker
@@ -10,7 +10,7 @@ import sys
 
 
 def fetch_all():
-    """Fetchs all states"""
+    """Gets all states in the database"""
     username = sys.argv[1]
     password = sys.argv[2]
     database = sys.argv[3]
@@ -25,6 +25,7 @@ def fetch_all():
     for state in session.query(State).order_by(State.id).all():
         print("{}: {}".format(state.id, state.name))
     session.close()
+
 
 if __name__ == "__main__":
     fetch_all()
