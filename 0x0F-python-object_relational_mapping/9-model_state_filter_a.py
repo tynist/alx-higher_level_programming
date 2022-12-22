@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-State module
+State Contains a
 """
 from sqlalchemy import text
 from sqlalchemy.orm import sessionmaker
@@ -10,7 +10,9 @@ import sys
 
 
 def fetch_all():
-    """Fetchs all states"""
+    """Fetches all State objects that contain the letter a
+    in the database
+    """
     username = sys.argv[1]
     password = sys.argv[2]
     database = sys.argv[3]
@@ -26,6 +28,7 @@ def fetch_all():
             State.name.like('%a%')).order_by(State.id):
         print("{}: {}".format(state.id, state.name))
     session.close()
+
 
 if __name__ == "__main__":
     fetch_all()
