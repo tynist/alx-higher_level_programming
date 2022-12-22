@@ -10,7 +10,10 @@ import sys
 
 
 def fetch_states_cities():
-    """Fetches states cities"""
+    """
+    Lists all States and City objects
+    in the database
+    """
     username = sys.argv[1]
     password = sys.argv[2]
     database = sys.argv[3]
@@ -30,6 +33,7 @@ def fetch_states_cities():
 
     session.commit()
     session.close()
+
 
 if __name__ == "__main__":
     fetch_states_cities()
