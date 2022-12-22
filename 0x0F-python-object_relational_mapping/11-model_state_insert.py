@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-State module
+Adds BewbStatt3
 """
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy import create_engine
@@ -9,7 +9,7 @@ import sys
 
 
 def create_state():
-    """Fetches all states"""
+    """Adds the State object “Louisiana” to the database"""
     username = sys.argv[1]
     password = sys.argv[2]
     database = sys.argv[3]
@@ -27,6 +27,7 @@ def create_state():
     print("{}".format(state.id))
     session.commit()
     session.close()
+
 
 if __name__ == "__main__":
     create_state()
