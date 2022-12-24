@@ -1,30 +1,22 @@
-Toggle navigation
 0x0F. Python - Object-relational mapping
-Python
-OOP
-SQL
-MySQL
-ORM
-SQLAlchemy
- By: Guillaume
- Weight: 1
- Project will start Dec 19, 2022 6:00 AM, must end by Dec 23, 2022 6:00 AM
- was released at Dec 20, 2022 6:00 AM
- An auto review will be launched at the deadline
-Before you start…
-Please make sure your MySQL server is in 8.0 -> How to install MySQL 8.0 in Ubuntu 20.04
+========================================
 
-Background Context
+By: Guillaume
+
+### Before you start…
+**Please make sure your MySQL server is in 8.0** -> [How to install MySQL 8.0 in Ubuntu 20.04](https://alx-intranet.hbtn.io/rltoken/paGukker_0KoG3D9FqymNQ)
+
+### Background Context
 In this project, you will link two amazing worlds: Databases and Python!
 
-In the first part, you will use the module MySQLdb to connect to a MySQL database and execute your SQL queries.
+In the first part, you will use the module `MySQLdb` to connect to a MySQL database and execute your SQL queries.
 
-In the second part, you will use the module SQLAlchemy (don’t ask me how to pronounce it…) an Object Relational Mapper (ORM).
+In the second part, you will use the module `SQLAlchemy` (don’t ask me how to pronounce it…) an Object Relational Mapper (ORM).
 
 The biggest difference is: no more SQL queries! Indeed, the purpose of an ORM is to abstract the storage to the usage. With an ORM, your biggest concern will be “What can I do with my objects” and not “How this object is stored? where? when?”. You won’t write any SQL queries only Python code. Last thing, your code won’t be “storage type” dependent. You will be able to change your storage easily without re-writing your entire project.
 
 Without ORM:
-
+```
 conn = MySQLdb.connect(host="localhost", port=3306, user="root", passwd="root", db="my_db", charset="utf8")
 cur = conn.cursor()
 cur.execute("SELECT * FROM states ORDER BY id ASC") # HERE I have to know SQL to grab all states in my database
@@ -33,8 +25,10 @@ for row in query_rows:
     print(row)
 cur.close()
 conn.close()
-With an ORM:
+```
 
+With an ORM:
+```
 engine = create_engine('mysql+mysqldb://{}:{}@localhost/{}'.format("root", "root", "my_db"), pool_pre_ping=True)
 Base.metadata.create_all(engine)
 
@@ -42,31 +36,39 @@ session = Session(engine)
 for state in session.query(State).order_by(State.id).all(): # HERE: no SQL query, only objects!
     print("{}: {}".format(state.id, state.name))
 session.close()
+```
+
 Do you see the difference? Cool, right?
 
 The biggest difficulty with ORM is: The syntax!
 
 Indeed, all of them have the same type of syntax, but not always. Please read tutorials and don’t read the entire documentation before starting, just jump on it if you don’t get something.
 
+
 Resources
-Read or watch:
+---------
 
-Object-relational mappers
-mysqlclient/MySQLdb documentation (please don’t pay attention to _mysql)
-MySQLdb tutorial
-SQLAlchemy tutorial
-SQLAlchemy
-mysqlclient/MySQLdb
-Introduction to SQLAlchemy
-Flask SQLAlchemy
-10 common stumbling blocks for SQLAlchemy newbies
-Python SQLAlchemy Cheatsheet
-SQLAlchemy ORM Tutorial for Python Developers (Warning: This tutorial is with PostgreSQL, but the concept of SQLAlchemy is the same with MySQL)
-SQLAlchemy Tutorial
+**Read or watch:**
+
+-  [Object-relational mappers](https://alx-intranet.hbtn.io/rltoken/a8DUOWhXpNX3TEwgyT-U8A)
+-  [mysqlclient/MySQLdb documentation](https://alx-intranet.hbtn.io/rltoken/JtFaKjnqxudr6Hi05Us1Lw) *(please don’t pay attention to `_mysql`)*
+-  [MySQLdb tutorial](https://alx-intranet.hbtn.io/rltoken/TdUSYFNGbXJG1WjCEoq5FA)
+-  [SQLAlchemy tutorial](https://alx-intranet.hbtn.io/rltoken/YyL5hsscviNH04XGW-XpfA)
+-  [SQLAlchemy](https://alx-intranet.hbtn.io/rltoken/j9azWF2Db_2rNolTxOF3SA)
+-  [mysqlclient/MySQLdb](https://alx-intranet.hbtn.io/rltoken/0zLhY9KqKjn-zmdb7X598Q)
+-  [Introduction to SQLAlchemy](https://alx-intranet.hbtn.io/rltoken/pw50Bl1Bj84wksxm018dwA)
+-  [Flask SQLAlchemy](https://alx-intranet.hbtn.io/rltoken/B-xIdMtGvpus8vHxAIRrPg)
+-  [10 common stumbling blocks for SQLAlchemy newbies](https://alx-intranet.hbtn.io/rltoken/deIzPMrfK8Ixqm-AboFHWg)
+-  [Python SQLAlchemy Cheatsheet](https://alx-intranet.hbtn.io/rltoken/dZfUNK3lJicGMK5PU0bE7Q)
+-  [SQLAlchemy ORM Tutorial for Python Developers](https://alx-intranet.hbtn.io/rltoken/hNxBKC8lHge5XjsRO8ksHQ) *(**Warning**: This tutorial is with PostgreSQL, but the concept of SQLAlchemy is the same with MySQL)*
+-  [SQLAlchemy Tutorial](https://alx-intranet.hbtn.io/rltoken/5G_R2NmQRFqiZb84qxYERQ)
+
+
 Learning Objectives
-At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
+-------------------
+At the end of this project, you are expected to be able to [explain](https://alx-intranet.hbtn.io/rltoken/vPPdh3HKg3t23YFxUqHpFg) to anyone, without the help of Google:
 
-General
+### General
 Why Python programming is awesome
 How to connect to a MySQL database from a Python script
 How to SELECT rows in a MySQL table from a Python script
