@@ -1,7 +1,5 @@
 #!/usr/bin/python3
-"""
-State module
-"""
+"""Deletes a state"""
 from sqlalchemy import text
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy import create_engine
@@ -10,7 +8,9 @@ import sys
 
 
 def delete_state():
-    """Deletes states"""
+    """Deletes all State objects with a name containing
+    the letter a in the database
+    """
     username = sys.argv[1]
     password = sys.argv[2]
     database = sys.argv[3]
@@ -28,6 +28,7 @@ def delete_state():
 
     session.commit()
     session.close()
+
 
 if __name__ == "__main__":
     delete_state()

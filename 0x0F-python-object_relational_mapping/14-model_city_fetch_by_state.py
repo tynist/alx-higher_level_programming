@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-City module
+City IB classes
 """
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy import create_engine
@@ -10,7 +10,7 @@ import sys
 
 
 def fetch_cities():
-    """Fetches cities"""
+    """City Class"""
     username = sys.argv[1]
     password = sys.argv[2]
     database = sys.argv[3]
@@ -29,6 +29,7 @@ def fetch_cities():
 
     session.commit()
     session.close()
+
 
 if __name__ == "__main__":
     fetch_cities()

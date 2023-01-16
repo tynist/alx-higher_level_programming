@@ -1,7 +1,5 @@
 #!/usr/bin/python3
-"""
-State module
-"""
+"""Update a State"""
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy import create_engine
 from model_state import Base, State
@@ -9,7 +7,7 @@ import sys
 
 
 def update_state():
-    """Fetches all states"""
+    """Changes the name of a State in the database"""
     username = sys.argv[1]
     password = sys.argv[2]
     database = sys.argv[3]
@@ -25,6 +23,7 @@ def update_state():
         update({State.name: 'New Mexico'}, synchronize_session=False)
     session.commit()
     session.close()
+
 
 if __name__ == "__main__":
     update_state()
