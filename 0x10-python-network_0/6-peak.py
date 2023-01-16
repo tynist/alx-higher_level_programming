@@ -1,23 +1,23 @@
 #!/usr/bin/python3
-"""task 6 modele"""
+"""Find a peak model"""
 
 
 def find_peak(list_of_integers):
-    """Return a peak in a list of unsorted integers."""
-    if list_of_integers == []:
+    """Find a peak in a list of unsorted integers"""
+    if list_of_int == []:
         return None
 
-    size = len(list_of_integers)
-    if size == 1:
-        return list_of_integers[0]
-    elif size == 2:
-        return max(list_of_integers)
+    length = len(list_of_int)
+    if length == 1:
+        return list_of_int[0]
+    elif length == 2:
+        return max(list_of_int)
 
-    mid = int(size / 2)
-    peak = list_of_integers[mid]
-    if peak > list_of_integers[mid - 1] and peak > list_of_integers[mid + 1]:
+    mid = int(length / 2)
+    peak = list_of_int[mid]
+    if peak > list_of_int[mid - 1] and peak > list_of_int[mid + 1]:
         return peak
-    elif peak < list_of_integers[mid - 1]:
-        return find_peak(list_of_integers[:mid])
+    elif peak < list_of_int[mid - 1]:
+        return find_peak(list_of_int[:mid])
     else:
-        return find_peak(list_of_integers[mid + 1:])
+        return find_peak(list_of_int[mid + 1:])
