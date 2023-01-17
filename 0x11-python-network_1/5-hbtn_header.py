@@ -1,8 +1,5 @@
 #!/usr/bin/python3
-"""
-Use requests package to make a get request to given URL and display
-the value of `X-Request-Id` in response header.
-"""
+"""Displays the X-Request-Id header variable of a request to a URL"""
 import sys
 import requests
 
