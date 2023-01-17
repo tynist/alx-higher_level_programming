@@ -3,7 +3,7 @@
 """
 Uses the GitHub API to display a GitHub ID based on given credentials
 """
-import sys
+from sys import argv
 import requests
 from requests.auth import HTTPBasicAuth
 
