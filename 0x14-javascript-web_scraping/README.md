@@ -1,10 +1,10 @@
 0x14. JavaScript - Web scraping
 ===============================
 
-Scripting
-API
+Scripting,
+API,
 JavaScript
- By: Guillaume, CTO at Holberton School
+  By: Guillaume, CTO at Holberton School
 
 
 Resources
