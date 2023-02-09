@@ -4,6 +4,7 @@
 Scripting,
 API,
 JavaScript
+
   By: Guillaume, CTO at Holberton School
 
 
@@ -15,7 +16,10 @@ Working with JSON data
 The workflow of accessing the attributes of a simply-created JSON object by Jimmy Tran from Cohort 1 - San Francisco
 request module
 Modern JS
+
+
 Learning Objectives
+-------------------
 At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
 
 ### General
@@ -75,14 +79,15 @@ guillaume@ubuntu:~/0x14$ ./0-readme.js doesntexist
   syscall: 'open',
   path: 'doesntexist' }
 guillaume@ubuntu:~/0x14$ 
-Repo:
 
-GitHub repository: alx-higher_level_programming
-Directory: 0x14-javascript-web_scraping
-File: 0-readme.js
-  
-1. Write me
-mandatory
+**Repo:**
+-  GitHub repository: `alx-higher_level_programming`
+-  Directory: `0x14-javascript-web_scraping`
+-  File: `0-readme.js`
+
+
+
+### 1\. Write me
 Write a script that writes a string to a file.
 
 The first argument is the file path
